@@ -1,0 +1,237 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1514,3300" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers.Scope</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Triggers</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="546,3235" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Chrome New Tab" sap:VirtualizedContainerService.HintSize="484,3124" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="4f55d48b-d622-4732-9644-90c007449da1" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,2907" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'editable text Address a…'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="HardwareEvents" ScopeIdentifier="4f55d48b-d622-4732-9644-90c007449da1" Text="Instagram Login[k(Enter)]" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="chrome://newtab/" DesignTimeRectangle="165, 59, 1581, 24" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;ctrl name='New Tab - Google Chrome - DHARANIKUMAR R V (rajalakshmi.edu.in)' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='New Tab - Google Chrome - DHARANIKUMAR R V (rajalakshmi.edu.in)' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' automationid='' /&gt;" Guid="4156e931-f865-42e9-9955-720f11a9e718" InformativeScreenshot="aadb5897c8aa5133a681fdf2da159cf6.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='New Tab - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'H3'" sap:VirtualizedContainerService.HintSize="388,107" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="42d76f83-fd8e-41a6-ae42-1eef8ad5be91" InformativeScreenshot="35966b21b431449441b7d70d79b14e14" Selector="&lt;webctrl tag='H3' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Click.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:Click>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Double" DisplayName="Type Into 'Phone number, username,…'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="4f55d48b-d622-4732-9644-90c007449da1" Text="mr.stranger_420" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.instagram.com/accounts/login/?hl=en" DesignTimeRectangle="835, 327, 250, 36" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='loginForm' tag='SPAN' type='' class='_aa4a' aaname='Phone number, username, or email' check:innerText='Phone number, username, or email' /&gt;" Guid="d232d137-7992-459e-b4c3-c8a8fff080dd" InformativeScreenshot="5bb4772589596d2b2d9f5382f8260510.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login • Instagram' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="4f55d48b-d622-4732-9644-90c007449da1" Text="Dharanikumar@64" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.instagram.com/accounts/login/?hl=en" DesignTimeRectangle="835, 371, 250, 36" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Password' parentid='loginForm' tag='SPAN' type='' class='_aa4a' check:innerText='Password' /&gt;" Guid="d7041a58-7739-44af-a366-b2e8b4ee0f7f" InformativeScreenshot="76700c1466065b936e561f7df79fc1d1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login • Instagram' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Log in'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4f55d48b-d622-4732-9644-90c007449da1" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.instagram.com/accounts/login/?hl=en" CVScreenId="d4bce3cb-ff66-48fc-b66a-0ff4a78aab91" CvElementArea="755, 556, 407, 53" CvTextArea="927, 572, 62, 25" CvTextArgument="Log in" CvType="Button" DesignTimeRectangle="757, 558, 403, 48" DesignTimeScaleFactor="1.5" FuzzySelectorArgument="&lt;webctrl type='' class='x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh x1xmf6yo x1e56ztr x540dpk x1m39q7l x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1' parentid='loginForm' tag='DIV' aaname='' check:innerText='Log in' /&gt;" Guid="87da1510-b9ca-4feb-94fe-2236075b1389" InformativeScreenshot="d62aecb96b0524de8177d1e1ee04ea59.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login • Instagram' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'New postCreate'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4f55d48b-d622-4732-9644-90c007449da1" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.instagram.com/?hl=en#reactivated" DesignTimeRectangle="20, 535, 311, 48" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl type='' class='x9f619 x3nfvp2 xr9ek0c xjpr12u xo237n4 x6pnmvc x7nr27j x12dmmrz xz9dl7a xn6708d xsag5q8 x1ye3gou x80pfx3 x159b3zp x1dn74xm xif99yt x172qv1o x10djquj x1lhsz42 xzauu7c xdoji71 x1dejxi8 x9k3k5o xs3sg5q x11hdxyr x12ldp4w x1wj20lx x1lq5wgf xgqcy7u x30kzoy x9jhf4c' tag='DIV' aaname='' check:innerText='Create' /&gt;" Guid="9392ed87-da21-48b8-9352-264800b95ba5" InformativeScreenshot="0f4c26e266bcd50d9160a5633a4a7486.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Instagram' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Select from computer'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4f55d48b-d622-4732-9644-90c007449da1" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.instagram.com/?hl=en#reactivated" DesignTimeRectangle="875, 639, 169, 32" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='Select from computer' tag='BUTTON' type='button' class=' _acan _acap _acas _aj1- _ap30' check:innerText='Select from computer' /&gt;" Guid="bb5eac67-f422-4a51-802b-1d1e0ae263d6" InformativeScreenshot="8d157dc173b287deb0961549c501f6c7.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Create new post • Instagram' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Pictures'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_10" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4f55d48b-d622-4732-9644-90c007449da1" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.instagram.com/?hl=en#reactivated" DesignTimeRectangle="61, 277, 46, 32" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd aaname='Control Host' cls='NamespaceTreeControl' title='Namespace Tree Control' /&gt;&lt;wnd ctrlid='100' title='Navigation Pane' /&gt;&lt;ctrl name='Pictures (pinned)' role='outline item' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd aaname='Control Host' cls='NamespaceTreeControl' title='Namespace Tree Control' /&gt;&lt;wnd ctrlid='100' title='Navigation Pane' /&gt;&lt;ctrl name='Pictures (pinned)' role='outline item' automationid='' check:text='Pictures (pinned)' /&gt;" Guid="38c5fc36-1ed4-4522-bec0-eaf8663d2758" InformativeScreenshot="4287c216269adebdffda0690ba4cdc7f.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Open' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="388,90" sap2010:WorkflowViewState.IdRef="Delay_1" />
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '&amp;Open'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_11" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4f55d48b-d622-4732-9644-90c007449da1" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.instagram.com/?hl=en#reactivated" DesignTimeRectangle="747, 489, 88, 26" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Open' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Open' check:text='&amp;amp;Open' /&gt;" Guid="4b4d7cc3-0b32-4765-99ab-52f1cb677f92" InformativeScreenshot="e8ec0313101b641123e6c11d3f123b2f.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Open' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Next'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4f55d48b-d622-4732-9644-90c007449da1" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.instagram.com/?hl=en#reactivated" DesignTimeRectangle="1276, 195, 31, 18" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Next' aria-role='button' tag='DIV' type='' class='x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w xdl72j9 x2lah0s xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x1hl2dhg xggy1nq x1ja2u2z x1t137rt x1q0g3np x1lku1pv x1a2a7pz x6s0dn4 xjyslct x1ejq31n xd10rxx x1sy0etr x17r0tee x9f619 x1ypdohk x1f6kntn xwhw2v2 xl56j7k x17ydfre x2b8uid xlyipyv x87ps6o x14atkfc xcdnw81 x1i0vuye xjbqb8w xm3z3ea x1x8b98j x131883w x16mih1h x972fbf xcfux6l x1qhh985 xm0m39n xt0psk2 xt7dq6l xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 x1n5bzlp x173jzuc x1yc6y37' check:innerText='Next' /&gt;" Guid="87a659d6-85dc-4bba-9023-0e570cbe45c7" InformativeScreenshot="6603e051e255bdb37df42fb092efd112.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Create new post • Instagram' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Next'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4f55d48b-d622-4732-9644-90c007449da1" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.instagram.com/?hl=en#reactivated" DesignTimeRectangle="1446, 195, 31, 18" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Next' aria-role='button' tag='DIV' type='' class='x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w xdl72j9 x2lah0s xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x1hl2dhg xggy1nq x1ja2u2z x1t137rt x1q0g3np x1lku1pv x1a2a7pz x6s0dn4 xjyslct x1ejq31n xd10rxx x1sy0etr x17r0tee x9f619 x1ypdohk x1f6kntn xwhw2v2 xl56j7k x17ydfre x2b8uid xlyipyv x87ps6o x14atkfc xcdnw81 x1i0vuye xjbqb8w xm3z3ea x1x8b98j x131883w x16mih1h x972fbf xcfux6l x1qhh985 xm0m39n xt0psk2 xt7dq6l xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 x1n5bzlp x173jzuc x1yc6y37' check:innerText='Next' /&gt;" Guid="931fc43b-356b-4f64-bb02-6d5d247f84f2" InformativeScreenshot="cea61d41b72b000e87df92e65ace212c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Create new post • Instagram' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="388,85" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Now give your suitable caption&quot;]" />
+            <Delay Duration="01:00:15" sap:VirtualizedContainerService.HintSize="388,90" sap2010:WorkflowViewState.IdRef="Delay_2" />
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="388,107" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f203a735-5e6c-4199-a1a8-2302983ea5ab" InformativeScreenshot="f0c7e0463c1815aea283a1ad58fee8d4" Selector="&lt;webctrl aaname='Share' aria-role='button' tag='DIV' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Click.Target>
+            </ui:Click>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Chrome" ContentHash="qDseWeiOJE6Cs9TUeoKmnQ" IconBase64="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" InformativeScreenshot="c6349186befb656d951df7ab66da6ac5.png" Selector="&lt;html app='chrome.exe' title='New Tab' /&gt;" Title="New Tab" Url="chrome://newtab/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
